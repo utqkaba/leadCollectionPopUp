@@ -1,0 +1,204 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./assets/shoppbagg.png");
+    font-family: Arial, sans-serif;
+}
+
+.black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100vw;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+}
+
+.col-left {
+  flex: 50%;
+  padding-right: 10px;
+}
+
+.col-right {
+  flex: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-right-remove {
+  display: none;
+}
+
+.col-right-next {
+  flex: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup{
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    height: 400px;
+    padding-right: 10px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    display: none;
+    text-align: center;
+}
+
+.close{
+    /* display: block; */
+    position: absolute;
+    /* margin:  0 0 20px auto; */
+    top: 10px;
+    right: 20px;
+    background-color: transparent;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+a{
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 12px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  /* margin-bottom: 60px; */
+}
+
+.input-next {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  /* margin-bottom: 60px; */
+}
+
+.shortText {
+  margin-top: 4px;
+}
+
+.e-mail {
+  padding: 8px;
+  padding-left: 14px;
+  margin-top: 14px;
+  margin-bottom: 10px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 6px;
+  border-color: rgba(128, 128, 128, 0.4);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.phone-number {
+  padding: 8px;
+  padding-left: 14px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 6px;
+  border-color: rgba(128, 128, 128, 0.4);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: rgb(40, 40, 40);
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+/* .btn-next {
+  background-color: rgb(40, 40, 40);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 6px;
+  font-size: 18px;
+} */
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 80;
+  line-height: 2;
+  text-align: left;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.box {
+  width: 33px;
+  height: 33px;
+  border: 6px solid #bcbcbc;
+  border-radius: 2px;
+  display: inline-block;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.coupon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  height: 35px;
+  border: 1px dashed;
+  border-color: rgba(128, 128, 128, 0.4);
+}
+
+.nextText {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-size: 11px;
+  font-weight: 80;
+  line-height: 2;
+}

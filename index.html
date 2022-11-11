@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lead Collection</title>
+  <!-- CSS external  -->
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="black" id="black">
+  <div class="popup" id="popup">
+    <div class="row" id="row">
+      <div class="col-left" id="col-left">
+        <img src="https://picsum.photos/350/400?grayscale" alt="image">
+      </div>
+      <div class="col-right" id="col-right">
+        <button id="close" class="close">&times;</button>
+        <div class="input">
+          <h2>Title</h2>
+          <small class="shortText">Short Text</small>
+          <input type="email" placeholder="Email" class="e-mail" id="e-mail">
+          <input type="tel" placeholder="Phone Number" class="phone-number" id="phone-number">
+          <button type="button" class="btn" onclick="beFirst()">BE FIRST</button>
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox" name="checkbox" class="box">
+            <label for="checkbox" onclick="goWiki()">By submitting this form, you are giving consent for your e-mail to be used and disclosed. *</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-right-remove" id="col-right-next">
+        <button id="close-next" class="close">&times;</button>
+        <div class="input-next">
+          <h1>Amazing!</h1>
+          <small class="nextText">Here is your discount code you can use ine your next order. This coupon code will be valid until 01.01.2020</small>
+          <input type="text" value="text" class="coupon" id="coupon" readonly disabled></input>
+          <button type="button" class="btn" onclick="copyCoupon()">Copy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Script external-->
+  <script src="script.js"></script>
+</body>
+</html>
